@@ -1,0 +1,6 @@
+alias doo='docker'
+alias doco='docker-compose'
+export PATH=~/bin:~/scripts:$PATH
+
+export PS1="\[\e]0;\h: \w\a\007\]\u@\h:\w# "
+
