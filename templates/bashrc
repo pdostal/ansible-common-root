@@ -1,3 +1,6 @@
+alias la='ls -la'
+alias ll='ls -l'
+
 alias doo='docker'
 alias doco='docker-compose'
 export PATH=~/bin:~/scripts:$PATH

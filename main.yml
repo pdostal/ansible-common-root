@@ -3,15 +3,15 @@
   sudo: true
   tasks:
   - name: Clone repository
-    git: repo=https://github.com/pdostal/server-scripts.git dest=/root/scripts
+    git: repo=https://github.com/pdostal/server-scripts.git dest=~/scripts
 
   - name: Ensure .profile exists
-    file: path=/root/.profile state=touch mode=700
-  - name: Include .bashrc
-    lineinfile: dest=/root/.profile create=yes regexp=~/.bashrc line='source ~/.bashrc'
+    file: path=~/.profile state=touch mode=700
+  - name: Include .bashrc in .profile
+    lineinfile: dest=~/.profile create=yes regexp=~/.bashrc line='source ~/.bashrc'
 
-  - name: Paste master config
+  - name: Paste .bashrc config
     template: >
       src=templates/bashrc
-      dest=/root/.bashrc
+      dest=~/.bashrc
 
