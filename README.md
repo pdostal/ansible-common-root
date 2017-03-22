@@ -1,3 +1,4 @@
-# ansible : Root Space
+# Ansible : Common : Root
 
-Keep root space up-to-date using Ansible
+Ansible common playbook for the root environment
+
